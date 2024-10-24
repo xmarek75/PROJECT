@@ -4,7 +4,7 @@ import whisper
 model = whisper.load_model("base")
 
 # Transkripce souboru
-result = model.transcribe("audio_sample.mp3")
+result = model.transcribe("video_sample.mp4")
 
 
 def simple_hours(seconds: float) -> float:
@@ -20,4 +20,4 @@ for segment in result["segments"]:
     start_minutes, start_seconds = simple_hours(start_time)#prepis na minuty a vteriny
     end_minutes, end_seconds = simple_hours(end_time)
 
-    print(f"[{start_minutes:.0f}:{start_seconds:.2f} - {end_minutes:.0f}:{end_seconds:.2f}] {text}")
+    print(f"[{start_minutes:.0f}:{start_seconds:.0f} - {end_minutes:.0f}:{end_seconds:.0f}] {text}")
