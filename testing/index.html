@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Pokemons</title>
+    <style>
+        .box {
+            padding: 100px 0;
+            width: 400px;
+            text-align:center;
+            background: beige;
+            margin: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pokemon</h1>
+
+    <div id="app_1">
+        <p>{{title}} - {{type}} - {{number}}</p>
+
+        <button v-on:click="number++">Increase Number</button>
+        <button v-on:click="number--">Decrease Number</button>
+        <div @click="changeTitle('bulbasaur')"><button>change title</button></div>
+
+        <div class="box" @mouseover="HandleEventMO">mouseover - {{title}}</div>
+        <div class="box" @dblclick="HandleEventDC">double click - {{type}}</div>
+
+
+
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 

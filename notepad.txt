@@ -1,0 +1,34 @@
+Node.js
+quasar CLI
+
+installing curl:
+    sudo apt install curl
+installing node.js:
+    # installs nvm (Node Version Manager)
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+
+    # download and install Node.js (you may need to RESTART the terminal)
+    nvm install 22
+
+    # verifies the right Node.js version is in the environment
+    node -v # should print `v22.11.0`
+
+    # verifies the right npm version is in the environment
+    npm -v # should print `10.9.0`
+
+installing quasar CLI:
+    npm i -g @quasar/cli
+    npm init quasar
+
+Installing FastAPI Uvicorn
+    pip install fastapi uvicorn
+
+Installing axios ve slozce vue_folder (opak backendu)
+    npm install axios
+
+Installing faster-whisper
+    pip install faster-whisper
+
+
+Run quasar  
+    quasar dev

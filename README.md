@@ -10,7 +10,8 @@
 
 ><b>instalace ffmpeg</b><br>
 `sudo apt install ffmpeg`
->Instalace pip<br>
+
+><b>Instalace pip</b><br>
 `sudo apt install python3-pip`
 
 ><b>vytvoreni virtualniho prostredi</b><br>
